@@ -13,7 +13,7 @@ Esta API fue desarrollada utilizando **Node.js**, **Express**, y **PostgreSQL**.
 ### Pasos para la Instalación
 1. Clone el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/Manu2423-sudo/storeManagment
    cd tu_repositorio
    ```
 2. Instale las dependencias:
