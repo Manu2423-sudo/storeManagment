@@ -1,0 +1,64 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+GET http://localhost:9000/api/products?category=Electronics&minPrice=100&maxPrice=500&minStock=10&maxStock=50&page=1&limit=5 HTTP/1.1
+
+###
+GET http://localhost:9000/api/products/1 HTTP/1.1
+
+###
+POST http://localhost:3000/api/registerProducts HTTP/1.1
+Content-Type: application/json
+
+{
+    "productsName": "Smartphone",
+    "productDesc": "Un smartphone de alta gama",
+    "productCategory": "Electronics",
+    "productPrice": 699.99,
+    "productSku": "SKU123456"
+}
+
+###
+PUT http://localhost:3000/api/editProducts/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "productsName": "Smartphone Actualizado",
+    "productDesc": "Un smartphone de alta gama actualizado",
+    "productCategory": "Electronics",
+    "productPrice": 799.99,
+    "productSku": "SKU1234567"
+}
+
+###
+DELETE http://localhost:3000/api/deleteProducts/1 HTTP/1.1
+
+###
+GET http://localhost:9000/api/inventory/STORE123 HTTP/1.1
+
+###
+POST http://localhost:3000/api/products/transfer HTTP/1.1
+Content-Type: application/json
+
+{
+    "productsId": "123",
+    "sourceStoreId": "STORE001",
+    "targetStoreId": "STORE002",
+    "quantity": 10
+}
+
+###
+GET http://localhost:3000/api/alerts/low-stock HTTP/1.1
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "productsName": "Huevo Bachoco", 
+    "productDesc": "Huevo Blanco de la marca Bachoco", 
+    "productCategory": "Alimentos", 
+    "productPrice": 35.2, 
+    "productSku": "123HBB1" 
+}
