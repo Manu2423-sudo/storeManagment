@@ -8,9 +8,9 @@ app.set('port', process.env.PORT || 9000)
 
 const dbOptions = {
     host: 'localhost', 
-    port: '3306', 
-    user: 'root', 
-    password: 'root123',
+    port: '', 
+    user: '', 
+    password: '',
     database: 'store',
     connectionLimit: 10,
 };
